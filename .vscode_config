@@ -13,16 +13,17 @@
     "explorer.compactFolders": false,
     "explorer.confirmDragAndDrop": false,
     "terminal.integrated.allowChords": false,
-    "editor.fontWeight": "300",
-    "atomKeymap.promptV3Features": true
+    "editor.fontWeight": "250",
+    "atomKeymap.promptV3Features": true,
+
     "editor.tokenColorCustomizations": 
     {
         "textMateRules": [
 			{
-				"scope": ["variable.parameter"],
+				"scope": ["variable.parameter.function.ruby"],
 				"settings": {
 					"foreground": "#65aef1",
-					"fontStyle": "italic bold"
+					"fontStyle": "bold"
 				}
             },
             {
@@ -33,20 +34,27 @@
 				}
             },
             {
-				"scope": ["entity.name.type", "support.class"],
+				"scope": ["entity.name.type.class.ruby", "support.class.ruby"],
 				"settings": {
                     "foreground": "#fff9a6",
                     "fontStyle": "underline"
 				}
             },
             {
-				"scope": ["constant.language.symbol", "constant.language.boolean"],
+				"scope": ["constant.language.symbol.hashkey.parameter.function.ruby"],
 				"settings": {
                     "foreground": "#a2f78dd7",
+                    "fontStyle": "bold"
 				}
             },
             {
-				"scope": ["variable.other.readwrite"],
+               "scope": ["constant.language.symbol", "constant.language.boolean"],
+               "settings": {
+                       "foreground": "#a2f78dd7",
+               }
+               },
+            {
+				"scope": ["variable.other.readwrite.instance.ruby", "variable.other.readwrite.class.ruby"],
 				"settings": {
                     "foreground": "#c7b0fcdc",
 				}
