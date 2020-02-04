@@ -1,0 +1,64 @@
+{
+    "editor.multiCursorModifier": "ctrlCmd",
+    "window.zoomLevel": 0,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontFamily": "Roboto Mono Light for Powerline",
+    "workbench.iconTheme": "file-icons",
+    "editor.fontSize": 16,
+    "editor.minimap.showSlider": "always",
+    "editor.fontFamily": "Roboto Mono Light for Powerline",
+    "editor.tabSize": 2,
+    "workbench.tree.renderIndentGuides": "always",
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.allowChords": false,
+    "editor.fontWeight": "300",
+    "atomKeymap.promptV3Features": true
+    "editor.tokenColorCustomizations": 
+    {
+        "textMateRules": [
+			{
+				"scope": ["variable.parameter"],
+				"settings": {
+					"foreground": "#65aef1",
+					"fontStyle": "italic bold"
+				}
+            },
+            {
+				"scope": ["keyword.control", "keyword"],
+				"settings": {
+					"foreground": "#65aef1",
+					"fontStyle": "bold"
+				}
+            },
+            {
+				"scope": ["entity.name.type", "support.class"],
+				"settings": {
+                    "foreground": "#fff9a6",
+                    "fontStyle": "underline"
+				}
+            },
+            {
+				"scope": ["constant.language.symbol", "constant.language.boolean"],
+				"settings": {
+                    "foreground": "#a2f78dd7",
+				}
+            },
+            {
+				"scope": ["variable.other.readwrite"],
+				"settings": {
+                    "foreground": "#c7b0fcdc",
+				}
+            }
+            
+		],		
+        "comments": "#ffffff7a",
+        "strings": "#56ec56e7",
+        "types": "#d88c7f",
+        "functions": "#f7d6a6",
+        "numbers": "#e456b9",
+        "variables": "#ffffffdc",
+    }
+    
+}
