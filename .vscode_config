@@ -19,7 +19,7 @@
     "editor.tokenColorCustomizations": 
     {
         "textMateRules": [
-			{
+			   {
 				"scope": ["variable.parameter.function.ruby"],
 				"settings": {
 					"foreground": "#65aef1",
@@ -32,6 +32,18 @@
 					"foreground": "#65aef1",
 					"fontStyle": "bold"
 				}
+            },
+            {
+            "scope": ["comment.line"],
+            "settings": {
+               "foreground": "#ffffff7a"
+            }
+            },
+            {
+            "scope": ["string.quoted"],
+            "settings": {
+               "foreground": "#56ec56e7"
+            }
             },
             {
 				"scope": ["entity.name.type.class.ruby", "support.class.ruby"],
@@ -61,12 +73,9 @@
             }
             
 		],		
-        "comments": "#ffffff7a",
-        "strings": "#56ec56e7",
         "types": "#d88c7f",
         "functions": "#f7d6a6",
         "numbers": "#e456b9",
-        "variables": "#ffffffdc",
-    }
-    
+        "variables": "#ffffffdc"
+    }   
 }
