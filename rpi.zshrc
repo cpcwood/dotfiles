@@ -1,6 +1,12 @@
+# Path to oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Theme
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-plugins=(zsh-completions zsh-autosuggestions zsh-syntax-highlighting)
+# Plugins
+plugins=(git zsh-completions zsh-autosuggestions zsh-syntax-highlighting)
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
@@ -36,4 +42,4 @@ alias hc="history -c"
 
 #Fonts
 #=====================================================================
-#Main - 
+#Main - System font (ssh only)
