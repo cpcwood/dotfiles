@@ -16,7 +16,7 @@ source $ZSH/oh-my-zsh.sh
 
 #Left prompt
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
-POWERLEVEL9K_CONTEXT_TEMPLATE='%n'
+POWERLEVEL9K_CONTEXT_TEMPLATE='%n@%m'
 POWERLEVEL9K_CUSTOM_LEFT_CONTEXT_BACKGROUND=000
 POWERLEVEL9K_CUSTOM_LEFT_CONTEXT_FOREGROUND='green'
 POWERLEVEL9K_VCS_SHORTEN_LENGTH=12
@@ -43,3 +43,7 @@ alias hc="history -c"
 #Fonts
 #=====================================================================
 #Main - System font (ssh only)
+
+# Environment variables
+
+export RAILS_ENV=production
