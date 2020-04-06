@@ -1,8 +1,11 @@
+export ZSH=$HOME/.oh-my-zsh
+
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-plugins=(git npm)
+plugins=(git zsh-completions zsh-autosuggestions zsh-syntax-highlighting)
+autoload -U compinit && compinit
+
 source $ZSH/oh-my-zsh.sh
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 . `brew --prefix`/etc/profile.d/z.sh
 
 #Powerlevel 9 config
@@ -13,8 +16,8 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 POWERLEVEL9K_CONTEXT_TEMPLATE='%n'
 POWERLEVEL9K_CUSTOM_LEFT_CONTEXT_BACKGROUND=000
 POWERLEVEL9K_CUSTOM_LEFT_CONTEXT_FOREGROUND='green'
-POWERLEVEL9K_VCS_SHORTEN_LENGTH=12
-POWERLEVEL9K_VCS_SHORTEN_MIN_LENGTH=12
+POWERLEVEL9K_VCS_SHORTEN_LENGTH=18
+POWERLEVEL9K_VCS_SHORTEN_MIN_LENGTH=20
 POWERLEVEL9K_VCS_SHORTEN_STRATEGY="truncate_from_right"
 POWERLEVEL9K_VCS_SHORTEN_DELIMITER=".."
 
@@ -39,12 +42,19 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time battery)
 #=====================================================================
 # For a full list of active aliases, run `alias`.
 alias x="exit"
-alias zshconfig="nano ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 alias hc="history -c"
-alias pro="cd ~/Onedrive/Documents/Coding/Projects"
-
+alias pro="cd ~...../Projects"
 
 #Fonts
 #=====================================================================
 #Main - Roboto Mono Light 14.pt
 #Non-ASCII - Knack Regular 14.pt
+
+# added by travis gem
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
