@@ -46,7 +46,7 @@
             }
             },
             {
-				"scope": ["entity.name.type.class.ruby", "support.class.ruby"],
+				"scope": ["entity.name.type.class.ruby", "support.class.ruby", "variable.other.constant.ruby"],
 				"settings": {
                     "foreground": "#fff9a6",
                     "fontStyle": "underline"
@@ -77,5 +77,15 @@
         "functions": "#f7d6a6",
         "numbers": "#e456b9",
         "variables": "#ffffffdc"
-    }   
+   },
+   "explorer.confirmDelete": false,
+   "workbench.startupEditor": "newUntitledFile",
+   "liveServer.settings.donotShowInfoMsg": true,
+   "cSpell.userWords": [
+      "mixins",
+      "stylesheets"
+   ],
+   "javascript.updateImportsOnFileMove.enabled": "always",
+   "extensions.confirmedUriHandlerExtensionIds": [  
+   ]
 }
